@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<!--    <link href="Bootstrap/css/bootstrap.min.css">-->
+    <head>
+          <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <style>
+        #logo{
+            height: :92px;
+            width: 92px;
+            padding-top: 80px;
+            
+            
+        }
+        #grad1 {
+            height: 250px;
+
+            background: linear-gradient(60deg, #337EE3 0%, #4865D3 11%, #337EE3 75%);
+            opacity:0.95;
+        }
+        #submit{
+            background: linear-gradient(60deg, #337EE3 0%, #4865D3 11%, #337EE3 75%);
+        }
+    </style>
+    </head>
+<body>
+<div id="container">
+     <div class="row">
+         <div class="col m4"></div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div id="grad1" class="card-image">
+                <center>
+                    <img src="images/png/home_login.png" id="logo"/>
+                </center>
+        
+            </div>
+                        <div class="progress" style="margin-top:-4px;" id="prog">
+                            <div class="indeterminate"></div>
+                        </div>
+            <div class="card-content">
+                <div class="row">
+                    <div class="input-field col s12 m12">
+                      <input id="last_name" type="text" class="validate">
+                      <label for="last_name">User Name</label>
+                    </div>
+                    <div class="input-field col s12 m12">
+                      <input id="last_name" type="password" class="validate">
+                      <label for="last_name">Password</label>
+                    </div>
+                    <a  style="margin-left:12px;">Forget Password?</a>
+                        <div>
+                        <center>
+                    <button class="waves-effect waves-light btn" id="submit"  style="margin-top:40px;" >Login</button>
+                            </center>
+                        </div>
+                    </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    
+</div>
+<!--<script src="Bootstrap/js/bootstrap.min.js"></script>-->
+        <!--Import jQuery before materialize.js-->
+    
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        var a=document.getElementById("prog");
+        var submit=document.getElementById("submit");
+        a.style.display='none';
+        submit.addEventListener('click',function(event){
+            a.style.display='inherit';
+        })
+    </script>
+</body>
+</html>
